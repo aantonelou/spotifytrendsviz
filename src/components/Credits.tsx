@@ -23,7 +23,7 @@ const Credits = () => {
           <tr className="border-t">
             <th className="align-top px-4 py-2 text-left">Site Hosting</th>
             <td className="px-4 py-2">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">GitHub</a>
+              <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">Vercel</a>
             </td>
           </tr>
           <tr className="border-t">

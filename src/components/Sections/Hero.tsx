@@ -1,12 +1,11 @@
-import {ChevronDownIcon} from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import {FC, memo} from 'react';
+import { FC, memo } from 'react';
 
-import {heroData, SectionId} from '../../data/data';
+import { heroData, SectionId } from '../../data/data';
 import Section from '../Layout/Section';
 
 const Hero: FC = memo(() => {
-  const {imageSrc, name, description} = heroData;
+  const { imageSrc, name, subtitle } = heroData;
 
   return (
     <Section noPadding sectionId={SectionId.Hero}>
@@ -18,18 +17,11 @@ const Hero: FC = memo(() => {
           priority
           src={imageSrc}
         />
-        <div className="z-10  max-w-screen-lg px-4 lg:px-0">
-          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 p-6 text-center shadow-lg backdrop-blur-sm">
+        <div className="z-10 max-w-screen-lg px-4 lg:px-0 flex flex-col items-center justify-center h-full">
+          <div className="flex flex-col items-center gap-y-3 rounded-xl bg-gray-800/40 p-6 text-center shadow-lg backdrop-blur-sm">
             <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-7xl font-custom">{name}</h1>
-            {description}
+            {subtitle}
           </div>
-        </div>
-        <div className="absolute inset-x-0 bottom-6 flex justify-center">
-          <a
-            className="rounded-full bg-white p-1 ring-white ring-offset-2 ring-offset-gray-700/80 focus:outline-none focus:ring-2 sm:p-2"
-            href={`/#${SectionId.About}`}>
-            <ChevronDownIcon className="h-5 w-5 bg-transparent sm:h-6 sm:w-6" />
-          </a>
         </div>
       </div>
     </Section>

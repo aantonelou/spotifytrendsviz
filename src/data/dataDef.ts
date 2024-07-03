@@ -15,6 +15,7 @@ export interface HomepageMeta {
 export interface Hero {
   imageSrc: string;
   name: string;
+  subtitle: JSX.Element;
   description: JSX.Element;
 }
 

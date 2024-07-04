@@ -13,9 +13,6 @@ const TableauDashboard: FC = () => {
         }
       };
 
-      ref.current.style.width = '80%'; // Adjust the width as needed
-      ref.current.style.height = '70vh'; // Adjust the height as needed
-
       try {
         new window.tableau.Viz(ref.current, vizUrl, options);
         console.log('Tableau Viz initialized');
@@ -25,7 +22,7 @@ const TableauDashboard: FC = () => {
     }
   }, []);
 
-  return <div ref={ref} style={{ width: '80%', height: '70vh' }} />;
+  return <div ref={ref} className="w-3/4 h-3/4" />;
 };
 
 TableauDashboard.displayName = 'TableauDashboard';

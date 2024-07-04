@@ -20,9 +20,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
   },
   "include": [
+    "global.d.ts", 
     "./src/**/*"
   ],
   "exclude": [

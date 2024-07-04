@@ -8,7 +8,7 @@ const About: FC = memo(() => {
   return (
     <Section className="bg-green-50" sectionId={SectionId.About}>
       <div className="my-16">
-        <div className="max-w-7xl mx-auto px-4 py-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="mb-8">
             <h2 className="text-3xl font-bold text-teal-900">Project Team</h2>
           </div>

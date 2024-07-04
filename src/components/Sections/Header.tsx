@@ -94,20 +94,22 @@ const NavItem: FC<{
   section: string;
   className: string;
   onClick?: () => void;
-}> = memo(({ section, className, onClick }) => {
+}> = memo(({ section, onClick }) => {
   const router = useRouter();
-  const href = `/${section === 'home' ? '' : section}`;
-  const isActive = router.pathname === href;
+  const href = `/${section === 'home' ? '' : section}`.toLowerCase();
+  const isActive = router.asPath.toLowerCase() === href;
 
-  const activeClass = isActive ? 'text-emerald-700' : 'text-neutral-100';
+  const activeStyle = isActive ? { color: '#047857', fontWeight: '600' } : { color: '#ffffff' };
+
+  const displayText = section.charAt(0).toUpperCase() + section.slice(1);
 
   return (
     <Link
-      className={`${className} ${activeClass}`}
+      style={activeStyle}
       href={href}
       key={section}
       onClick={onClick}>
-      {section}
+      {displayText}
     </Link>
   );
 });

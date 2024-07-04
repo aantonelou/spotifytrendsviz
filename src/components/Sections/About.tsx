@@ -6,10 +6,10 @@ import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
   return (
-    <Section className="bg-green-50" sectionId={SectionId.About}>
-      <div className="my-16">
+    <Section sectionId={SectionId.About} style={{background: "rgba(109,139,133,255)"}}>
+      <div className="my-16 bg-green-50 rounded-lg">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <div className="mb-8">
+          <div className="mb-8 py-5">
             <h2 className="text-3xl font-bold text-teal-900">Project Team</h2>
           </div>
           <div className="flex flex-wrap justify-center">

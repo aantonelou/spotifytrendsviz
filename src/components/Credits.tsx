@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 
 const Credits = () => {
   return (
-    <div className="container-xxl px-4 py-5">
+    <div className="container-xxl px-4 py-5 bg-green-50 rounded-lg">
       <h2 className="mb-8 text-3xl text-center font-bold text-teal-900">Credits, Tools & Sources</h2>
       <table className="w-full table-auto">
         <tbody>

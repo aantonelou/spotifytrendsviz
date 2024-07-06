@@ -3,14 +3,14 @@ import Page from '../components/Layout/Page';
 import { homePageMeta } from '../data/data';
 import Header from '../components/Sections/Header';
 import Footer from '../components/Sections/Footer';
-import Dashboard from '../components/Sections/Dashboard';
+import Dashboards2023 from '../components/Sections/Dashboards2023';
 
 const DashboardPage: FC = memo(() => {
   const { title, description, favicon } = homePageMeta;
   return (
     <Page description={description} title={title} favicon={favicon}>
       <Header />
-      <Dashboard />
+      <Dashboards2023 />
       <Footer />
     </Page>
   );

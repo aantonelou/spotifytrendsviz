@@ -1,11 +1,16 @@
-import { FC, useEffect, useRef } from 'react';
+import React, { FC, useEffect, useRef } from 'react';
 
-const TableauDashboard: FC = () => {
+interface TableauDashboardProps {
+  vizUrl: string;
+  height?: string;
+  width?: string;
+}
+
+const TableauDashboard: FC<TableauDashboardProps> = ({ vizUrl, height = '600px', width = '800px' }) => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (ref.current) {
-      const vizUrl = 'https://public.tableau.com/views/test_17200412685350/Dashboard1?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link';
       const options = {
         hideTabs: true,
         onFirstInteractive: function () {
@@ -20,9 +25,9 @@ const TableauDashboard: FC = () => {
         console.error('Error initializing Tableau Viz:', error);
       }
     }
-  }, []);
+  }, [vizUrl]);
 
-  return <div ref={ref} className="w-3/4 h-3/4" />;
+  return <div ref={ref} style={{ height, width }} />;
 };
 
 TableauDashboard.displayName = 'TableauDashboard';

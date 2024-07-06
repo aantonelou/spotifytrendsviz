@@ -12,6 +12,17 @@ const Footer: FC = memo(() => (
       </button>
     </div>
     <div className="flex flex-col items-center gap-y-6">
+      <div className="w-full flex justify-center">
+        <iframe
+          style={{ borderRadius: "12px" }}
+          src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMDoHDwVN2tF?utm_source=generator&theme=0"
+          width="100%"
+          height="200"
+          allowFullScreen={true}
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
       <span className="text-sm text-neutral-700">© 2024 - Visualizing Spotify Music Streaming Trends</span>
     </div>
   </div>

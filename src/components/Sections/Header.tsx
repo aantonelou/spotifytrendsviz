@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { FC, Fragment, memo, useCallback, useState } from 'react';
 
 const Header: FC = memo(() => {
-  const navSections = ['home', 'dashboard', '2023', 'presentation', 'about'];
+  const navSections = ['home', '2023', 'presentation', 'about'];
 
   return (
     <>

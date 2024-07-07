@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { FC, Fragment, memo, useCallback, useState } from 'react';
 
 const Header: FC = memo(() => {
-  const navSections = ['home', '2023', 'presentation', 'about'];
+  const navSections = ['home', '2023', 'through_time', 'user_beats', 'presentation', 'about'];
 
   return (
     <>
@@ -105,6 +105,10 @@ const NavItem: FC<{
 
   if (displayText === '2023') {
     displayText = 'Year in Music 2023';
+  } else if (displayText === 'Through_time') {
+    displayText = 'Through Time';
+  } else if (displayText === 'User_beats') {
+    displayText = 'User Beats';
   }
 
   return (

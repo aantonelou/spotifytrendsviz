@@ -9,10 +9,10 @@ const topTracksDashboard = 'https://public.tableau.com/views/Spotify_Book1/Dashb
 const playlistDashboard = 'https://public.tableau.com/views/Spotify_Book3/Dashboard3?:language=en-GB&publish=yes&:device=desktop&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link';
 const timeDashboard = 'https://public.tableau.com/views/Spotify_Book5/Dashboard4?:language=en-GB&publish=yes&:device=desktop&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link';
 
-const Dashboard2023: FC = memo(() => {
+const UserBeatsDashboards: FC = memo(() => {
   return (
     <Section noPadding sectionId={SectionId.Dashboard} className="p-12" style={{ background: "rgba(109,139,133,255)" }}>
-      <div className="flex items-center justify-center mt-8">
+      <div className="flex items-center justify-center mt-16">
         <div className="w-1/2 p-2">
         <TableauDashboard vizUrl={playlistDashboard} height="100%" width="100%" />
         </div>
@@ -34,5 +34,5 @@ const Dashboard2023: FC = memo(() => {
   );
 });
 
-Dashboard2023.displayName = 'Dashboard2023';
-export default Dashboard2023;
+UserBeatsDashboards.displayName = 'UserBeatsDashboards';
+export default UserBeatsDashboards;

@@ -37,8 +37,17 @@ body {
   width: 100%;
   color: #444444;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif;
-  background-color: #fafafa;
+  background-color: rgba(109, 139, 133, 255);
+  display: flex;
+  flex-direction: column;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 
 td,
 th {
@@ -48,4 +57,12 @@ th {
 
 th {
   font-weight: 600;
+}
+
+.section-background {
+  background-color: rgba(109, 139, 133, 255);
+  min-height: 100vh;
+  padding: 12px;
+  box-sizing: border-box;
+  width: 100%;
 }

@@ -8,7 +8,7 @@ const PageInfo: FC = memo(() => {
 
   return (
     <Section noPadding sectionId={SectionId.Hero}>
-        <div className="px-4 py-8">
+        <div className="px-4 py-8 mt-8"> {/* Added margin-top */}
           <h2 className="text-2xl font-bold text-center text-white">Explore Our Visualizations</h2>
           <div className="mt-8 flex justify-center">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-screen-lg">

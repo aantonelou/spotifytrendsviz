@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 const InsightsText2023: FC = () => (
-  <div style={{ padding: '1rem', borderRadius: '8px', margin: '2rem 0', color: 'white' }}>
+  <div className="p-4 md:p-8 bg-transparent text-white rounded-md m-4">
     <p>The "<strong>Top 20 Tracks of 2023 by Streams</strong>" dashboard showcases a fascinating mix of songs from various years. 
     The prevalence of older tracks in the top 20 underscores the power of streaming platforms in maintaining the relevance of music over time.</p>
     <br/>

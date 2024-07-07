@@ -11,22 +11,22 @@ const timeDashboard = 'https://public.tableau.com/views/Spotify_Book5/Dashboard4
 
 const Dashboard2023: FC = memo(() => {
   return (
-    <Section noPadding sectionId={SectionId.Dashboard} className="p-12" style={{ background: "rgba(109,139,133,255)" }}>
-      <div className="flex items-center justify-center mt-8">
-        <div className="w-1/2 p-2">
+    <Section noPadding sectionId={SectionId.Dashboard} className="p-4 md:p-12" style={{ background: "rgba(109,139,133,255)" }}>
+      <div className="flex flex-wrap items-center justify-center mt-8">
+      <div className="w-full md:w-1/2 p-2">
         <TableauDashboard vizUrl={playlistDashboard} height="100%" width="100%" />
         </div>
-        <div className="w-1/2 p-2">
+        <div className="w-full md:w-1/2 p-2">
         <TableauDashboard vizUrl={topTracksDashboard} height="100%" width="100%" />
         </div>
       </div>
       <div className="flex items-center justify-center mt-8">
-        <div className="w-1/2 p-2">
+      <div className="w-full md:w-1/2 p-2">
         <InsightsText2023 />
         </div>
       </div>
-      <div className="flex items-center justify-center mt-4">
-        <div>
+      <div className="flex items-center justify-center mt-2">
+        <div className="w-full md:w-3/4 lg:w-1/2">
           <TableauDashboard vizUrl={timeDashboard} height="100%" width="100%" />
         </div>
       </div>

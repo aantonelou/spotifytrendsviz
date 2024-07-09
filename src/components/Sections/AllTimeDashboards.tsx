@@ -11,7 +11,7 @@ const AllTimeDashboards: FC = memo(() => {
   return (
     <Section noPadding sectionId={SectionId.Dashboard} className="p-12" style={{ background: "rgba(109,139,133,255)" }}>
       <div className="flex flex-col md:flex-row items-center justify-center mt-8">
-        <div className="w-full md:w-1/2 p-2">
+        <div className="w-full md:w-2/3 p-2">
           <TableauDashboard vizUrl={topArtistsDashboard} height="100%" width="100%" />
         </div>
         <div className="w-full md:w-1/2 p-2">
@@ -27,7 +27,7 @@ const AllTimeDashboards: FC = memo(() => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row items-center justify-center mt-8">
-        <div className="w-full md:w-1/3 p-2">
+        <div className="w-full md:w-1/2 p-2">
           <div style={{ padding: '1rem', borderRadius: '8px', margin: '2rem 0', color: 'white' }}>
             <p>This dashboard shows the average popularity of various artists over time and it's fascinating to see how the popularity of artists has evolved, noticing the spikes during major album releases or significant events in their careers. 
               This visualization helps us understand the long-term trends in music popularity and can be a great tool for analyzing the impact of marketing campaigns etc on an artist's popularity.
@@ -35,7 +35,7 @@ const AllTimeDashboards: FC = memo(() => {
             <p>The timeline also helps identify which artists have a consistent popularity versus those with more fluctuating trends.</p>   
           </div>
         </div>
-        <div className="w-full md:w-1/2 p-2">
+        <div className="w-full md:w-2/3 p-2">
           <TableauDashboard vizUrl={timelineDashboard} height="100%" width="100%" />
         </div>
       </div>

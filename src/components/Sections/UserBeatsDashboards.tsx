@@ -18,8 +18,8 @@ const UserBeatsDashboards: FC = memo(() => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-center mt-4">
-        <div className="w-full md:w-1/2 p-2">
+      <div className="flex flex-col md:flex-row items-center justify-center">
+        <div className="w-full md:w-2/3 p-2">
           <TableauDashboard vizUrl={dayTimeDashboard} height="100%" width="100%" />
         </div>
         <div className="w-full md:w-1/2 p-2">
@@ -42,7 +42,7 @@ const UserBeatsDashboards: FC = memo(() => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row items-center justify-center mt-8">
-        <div className="w-full md:w-1/2 p-2">
+        <div className="w-full md:w-1/3 p-2">
           <div style={{ padding: '1rem', borderRadius: '8px', margin: '2rem 0', color: 'white' }}>
             <p>This dashboard highlights the preferred music genres of Spotify users across various activities. <br/><br/>
               For instance, electronic and dance music is more popular during workout sessions, while classical music is a favorite during study hours.

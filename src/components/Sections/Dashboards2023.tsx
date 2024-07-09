@@ -26,7 +26,7 @@ const Dashboards2023: FC = memo(() => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center mb-8 w-full">
-        <div className="w-full md:w-2/3 lg:w-1/2 p-2">
+        <div className="w-full p-2 md:w-auto md:flex md:justify-center">
           <TableauDashboard vizUrl={timeDashboard} height="100%" width="100%" />
         </div>
       </div>

@@ -24,16 +24,10 @@ const UserBeatsDashboards: FC = memo(() => {
         </div>
         <div className="w-full md:w-1/2 p-2">
           <div style={{ padding: '1rem', borderRadius: '8px', margin: '2rem 0', color: 'white' }}>
-            <p>This visualization provides an overview of how the popularity of different music genres varies throughout the day.<br/><br/>
-            You can see the shifts in genre preferences as the day progresses, influenced by users' daily routines and energy levels.
-            For example, genres like pop and electronic/dance dominate the afternoon, while classical and melody are preferred in the evening.<br/><br/>
-            Additionally, it is interesting to note that most people tend to listen to music more at night, perhaps as a way to relax at the end of the day.
-            </p>
-
             <p>
               This visualization provides an overview of how the popularity of different music genres varies throughout the day.<br/><br/>
-              It is fascinating to see the shifts in genre preferences as the day progresses, influenced by users' daily routines and energy levels.
-              For example, genres like pop and electronic/dance dominate the afternoon, while classical and melody are preferred in the evening.<br/><br/>
+              We see the shifts in genre preferences as the day progresses, influenced by users' daily routines and energy levels.
+              For example, genres like pop and electronic/dance are preferred in the afternoon, while classical and melody are preferred in the evening.<br/><br/>
               Additionally, it is interesting to note that most people tend to listen to music more at night, perhaps as a way to relax at the end of the day.<br/><br/>
               This information can be incredibly valuable for music marketers and content creators aiming to target their audience more effectively by aligning their releases 
               with the times when specific genres are most popular.
@@ -41,18 +35,17 @@ const UserBeatsDashboards: FC = memo(() => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-center mt-8">
+      <div className="flex flex-col md:flex-row items-center justify-center mt-16">
         <div className="w-full md:w-1/3 p-2">
           <div style={{ padding: '1rem', borderRadius: '8px', margin: '2rem 0', color: 'white' }}>
             <p>This dashboard highlights the preferred music genres of Spotify users across various activities. <br/><br/>
-              For instance, electronic and dance music is more popular during workout sessions, while classical music is a favorite during study hours.
-            </p>  
-
-            This dashboard highlights the preferred music genres of Spotify users across various activities.<br/><br/>
-              For instance, electronic and dance music might be more popular during workout sessions, while classical music could be a favorite during study hours.<br/><br/>
+              The data shows that the majority of Spotify users listen to music while traveling, with this activity having the highest overall engagement. 
+              Leisure time is another popular activity for listening to music, followed closely by workout sessions.<br/><br/>
+              Electronic and dance music is more popular during workout sessions, while classical music is a favorite during study hours.<br/><br/>
               By analyzing these trends, we can understand how music preferences are influenced by the context in which people are listening. This can help in organizing playlists that enhance 
               the user experience for specific activities, thus increasing user engagement and satisfaction.<br/><br/>
               It also opens up opportunities for brands and advertisers to strategically place their ads in playlists that align with the activities where their target audience is most engaged.
+              </p>  
           </div>
         </div>
         <div className="w-full md:w-1/2 p-2">

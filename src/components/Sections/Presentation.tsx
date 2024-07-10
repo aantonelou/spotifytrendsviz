@@ -11,7 +11,7 @@ const Presentation: FC = memo(() => {
             <p>Here you can watch a quick overview of the website and our visualizations.</p>
           </div>
         </div>
-        <div className="w-full md:w-1/2">
+        {/* <div className="w-full md:w-1/2">
           <iframe 
             width="100%" 
             height="500" 
@@ -20,7 +20,7 @@ const Presentation: FC = memo(() => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowFullScreen>
           </iframe>
-        </div>
+        </div> */}
       </div>
     </Section>
   );

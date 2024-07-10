@@ -104,7 +104,7 @@ const NavItem: FC<{
   let displayText = section.charAt(0).toUpperCase() + section.slice(1);
 
   if (displayText === '2023') {
-    displayText = 'Year in Music 2023';
+    displayText = '2023: Year in Music';
   } else if (displayText === 'Through_time') {
     displayText = 'Through Time';
   } else if (displayText === 'User_beats') {

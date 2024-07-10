@@ -45,7 +45,7 @@ const AllTimeDashboards: FC = memo(() => {
         </div>
         <div className="w-full md:w-1/2 p-2">
           <div style={{ padding: '1rem', borderRadius: '8px', margin: '2rem 0', color: 'white' }}>
-            <p>Here we can see how the average duration of songs has changed from 2000 to 2025. 
+            <p>Here we can see how the average duration of songs has changed from 2000 to 2024. 
               There is an interesting trend where songs have varied in length over the years, possibly reflecting changes in listener preferences and industry standards. 
               This could be also influenced by the shift from albums to streaming services, where shorter songs might be more favorable for quick consumption, driven by 
               streaming platform algorithms that favor higher play counts.

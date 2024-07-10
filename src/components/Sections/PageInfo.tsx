@@ -13,7 +13,7 @@ const PageInfo: FC = memo(() => {
           <div className="mt-8 flex justify-center">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-screen-lg">
               <div className="bg-white p-4 rounded shadow">
-                <h3 className="text-xl font-semibold text-center mb-4">Year in Music 2023</h3>
+                <h3 className="text-xl font-semibold text-center mb-4">2023: Year in Music</h3>
                 <p>Discover the top charts of 2023, highlighting the most popular songs and artists of the year.</p>
                 <div className="text-right">
                   <Link href="/2023" legacyBehavior>

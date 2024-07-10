@@ -3,7 +3,7 @@ import { SectionId } from '../../data/data';
 import Section from '../Layout/Section';
 import TableauDashboard from './TableauDashboard';
 
-const activityTypeDashboard = 'https://public.tableau.com/views/activity_17205527893410/Dashboard3?:language=en-GB&publish=yes&:device=desktop&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link';
+const activityTypeDashboard = 'https://public.tableau.com/views/activity_17205527893410/MusicGenresAcrossDifferentActivities?:language=en-GB&publish=yes&:device=desktop&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link';
 const dayTimeDashboard = 'https://public.tableau.com/views/dayTime/Dashboard4?:language=en-GB&publish=yes&:device=desktop&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link';
 
 const UserBeatsDashboards: FC = memo(() => {

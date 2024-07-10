@@ -51,9 +51,6 @@ const AllTimeDashboards: FC = memo(() => {
               streaming platform algorithms that favor higher play counts.
             </p> <br/>
             <p>Interestingly, older songs (which tend to have a longer duration) still hold though a significant place in today's music landscape, 
-              indicating a lasting appreciation for classic hits and their timeless appeal.
-            </p><br/>
-            <p>Interestingly, older songs (which tend to have a longer duration) still hold though a significant place in today's music landscape, 
               indicating a lasting appreciation for classic hits and their timeless appeal, 
               as you can see in <a href="/2023" style={{ color: 'lightblue', textDecoration: 'underline' }}>top tracks chart of 2023</a>.</p><br/>
             <p>This contrast sparks an ongoing debate: are modern listeners leaning towards shorter, more consumable tracks, 

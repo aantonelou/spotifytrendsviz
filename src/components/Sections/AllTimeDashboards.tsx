@@ -10,17 +10,17 @@ const songLengthDashboard = 'https://public.tableau.com/views/SongLength_1720312
 const AllTimeDashboards: FC = memo(() => {
   return (
     <Section noPadding sectionId={SectionId.Dashboard} className="p-12" style={{ background: "rgba(109,139,133,255)" }}>
-      <div className="flex flex-col md:flex-row items-center justify-center mt-8">
-        <div className="w-full md:w-2/3 p-2">
+      <div className="flex flex-col items-center justify-center mt-8">
+        <div className="w-full p-2">
           <TableauDashboard vizUrl={topArtistsDashboard} height="100%" width="100%" />
         </div>
-        <div className="w-full md:w-1/2 p-2">
+        <div className="w-full p-2">
           <div style={{ padding: '1rem', borderRadius: '8px', margin: '2rem 0', color: 'white' }}>
             <p>This visualization breaks down the total streams of top artists, highlighting their dominance in the music streaming world. 
-              Artists like Drake, Bad Bunny and Taylor Swift lead the charts, reflecting their massive global fanbases and consistent release of hit songs. The chart also distinguishes between lead, solo, and feature streams, 
+              Artists like Drake, Bad Bunny, and Taylor Swift lead the charts, reflecting their massive global fanbases and consistent release of hit songs. The chart also distinguishes between lead, solo, and feature streams, 
               providing deeper insights into their collaboration patterns and solo success.
             </p> <br />
-            <p>This distinction between lead, solo and feature streams helps understand the collaboration dynamics. The dashboard also illustrates the dynamic nature of the music industry, 
+            <p>This distinction between lead, solo, and feature streams helps understand the collaboration dynamics. The dashboard also illustrates the dynamic nature of the music industry, 
               featuring both established and newer artists across a variety of genres.
             </p>
           </div>

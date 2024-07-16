@@ -10,11 +10,11 @@ const UserBeatsDashboards: FC = memo(() => {
   return (
     <Section noPadding sectionId={SectionId.Dashboard} className="p-12" style={{ background: "rgba(109,139,133,255)" }}>
       <div className="w-full p-2 mt-8">
-        <div style={{ padding: '1rem', borderRadius: '8px', margin: '2rem 0', color: 'white', textAlign: 'center' }}>
+        <div style={{ padding: '1rem', borderRadius: '8px', margin: '2rem 0', color: 'white'}}>
           <p>
-            In the following dashboards, you'll find insights into the behavior patterns and preferences of Spotify users.
+          In the following dashboards, you'll find insights into the behavior patterns and preferences of Spotify users.
             These visualizations are designed to explore how different genres of music are enjoyed across various activities
-            and times of the day.
+            and times of the day. Please note that these dashboards are based on a research conducted on a smaller sample size compared to the other dashboards in this project.
           </p>
         </div>
       </div>
